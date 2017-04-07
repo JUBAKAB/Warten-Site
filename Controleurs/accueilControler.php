@@ -17,6 +17,11 @@ $SponsorDAO = new sponsorDAO();
 $LesSponsors = $SponsorDAO->get_sponsor();
 
 
+$PrestationDAO = new prestationDAO();
+$LesPrestations = $PrestationDAO->get_prestation();
+
+
+
 
 
 include_once('Accueil.php');
