@@ -11,4 +11,5 @@ include_once'prestation.inc.php';
 include_once'rel_planning_joursemaine.inc.php';
 include_once'reseauxsociaux.inc.php';
 include_once'sponsor.inc.php';
+include_once'menu.inc.php';
 ?>

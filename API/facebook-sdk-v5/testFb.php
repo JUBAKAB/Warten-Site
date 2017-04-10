@@ -1,5 +1,5 @@
 <?php 
-use Facebook\FacebookRequest;
+require 'facebook.php';
 
 
 

@@ -13,4 +13,5 @@ require_once'DAO/prestationDAO.inc.php';
 require_once'DAO/rel_planning_joursemaineDAO.inc.php';
 require_once'DAO/reseauxsociauxDAO.inc.php';
 require_once'DAO/sponsorDAO.inc.php';
+require_once'DAO/menuDAO.inc.php';
 ?>
