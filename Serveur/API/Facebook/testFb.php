@@ -17,7 +17,7 @@
   $fb->setDefaultAccessToken('170350160153384|xh2T89hzriqWO4AC4-LxTm6cFqM');
 
   // On récupère les informations personnel
-  $response = $fb->get('/379620812382153/posts?fields=id,message,created_time,picture,likes,shares');
+  $response = $fb->get('/100008652786346/posts?fields=id,message,created_time,picture,likes,shares');
   $posts = $response->getGraphEdge();
   $json = json_decode($posts, true);
   $posts = array_chunk($json, 20);
