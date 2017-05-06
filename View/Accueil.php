@@ -19,7 +19,7 @@
                 <div class="box">
                     <?php
                 for($i = 0;$i<count($imageSponsor);$i++){
-                   echo '<a href="'.$lienSponsor[$i].'"><img src="'.$imageSponsor[$i].'" class="sponsor" style="margin-left:'.$positionSponsor.'%;"></a>';
+                   echo '<a href="'.$lienSponsor[$i].'"><img src="img/'.$imageSponsor[$i].'.png" class="sponsor" style="margin-left:'.$positionSponsor.'%;"></a>';
                 }
                     
                 ?>
