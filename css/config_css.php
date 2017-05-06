@@ -11,9 +11,7 @@
 
     $heightBox=165;
     $positionSponsor =1;
-    $heightSponsor=120;
-    
-    $tailleBox =100;
+    $heightSponsor=60;
     ?>
 
     @font-face {
@@ -92,8 +90,8 @@
     }
     
     .img_logo {
-        width:auto;
-        height: 100%;
+        width:150px;
+        height: 50px;
         padding-top: 20px;
         margin-left: 80px;
         float: left;
@@ -130,19 +128,17 @@
     }
     .sponsor_box{
         margin: 0 auto;
-        width: 95%;
+        width: 1500px;
         height: 165px;
         overflow: hidden;
     }
     .box{
-        position: relative;
         height: <?php echo $heightBox?>px;
         width: <?php echo $tailleBox ?>%;
         line-height: 165px;
         
     }
     .sponsor{
-        width: <?php echo $tailleSponsor ?>%;
         height: <?php echo $heightSponsor ?>px;
         margin-top: <?php echo ($heightBox - $heightSponsor)/2?>px;
     }

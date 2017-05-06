@@ -1,7 +1,7 @@
         <!-- Menu et logo -->
         <div class="contener_menu">
             <div class="img_logo">
-                <img src="img/logowarten.png" alt="Logo warten">
+                <img src="img/logoWarten.png" alt="Logo warten" width="100%" height="100%">
             </div>
             <nav>
 
