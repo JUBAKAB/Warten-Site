@@ -91,8 +91,8 @@
     
     .img_logo {
         width:150px;
-        height: 50px;
-        padding-top: 20px;
+        height: 80px;
+        padding-top: 5px;
         margin-left: 80px;
         float: left;
     }
@@ -128,7 +128,7 @@
     }
     .sponsor_box{
         margin: 0 auto;
-        width: 1500px;
+        width: 1200px;
         height: 165px;
         overflow: hidden;
     }
@@ -151,8 +151,15 @@
     }
      /*Cellules*/
     .cellule_container{
-        width: 1200px;
+        float: left;
+        position: relative;
+        width: 100%;
+        height: 800px;
         margin: 0 auto;
+        text-align: center;
+        background: black url('img/background_image.png') no-repeat 0 0; 
+        background-size: 100% 200%;
+        background-position: left bottom;
     }
     .cellule_articles{
         float:left;
@@ -160,7 +167,13 @@
         height: 800px;
         margin-top: 15px;
         margin-bottom: 15px;
-        background-color: red;
+        background-color: <?php echo $colorsecondary ?>;;
+        text-align: left;
+        -moz-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        -webkit-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        -o-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=<?php echo $colorbasic ?>, Direction=NaN, Strength=15);
     }
     .cellule_activity{
         float: right;
@@ -168,6 +181,23 @@
         height: 800px;
         margin-top: 15px;
         margin-bottom: 15px;
-        background-color: red;
+        background-color: <?php echo $colorsecondary ?>;
+        text-align: left;
+        -moz-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        -webkit-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        -o-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=<?php echo $colorbasic ?>, Direction=NaN, Strength=15);
     }
+    .center_image{
+        margin: 0 auto;
+        width: 1200px;
+    }
+   /* .background_image{
+        float: left;
+        position: relative;
+        height: 800px;
+        width: 1200px;
+        
+    }*/
 </style>
