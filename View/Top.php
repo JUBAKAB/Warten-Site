@@ -7,6 +7,7 @@
         <title>Warten Site - Accueil</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
         <?php include('css/config_css.php');?>
+      
     </head>
 
     <body>
@@ -18,7 +19,7 @@
             <div class="container_rs">
                 <?php
                 for($i = 0;$i<count($lien);$i++)
-                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="img/'.$pathpicture[$i].'.png"></a>';
+                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs" src="img/'.$pathpicture[$i].'.png"></a>';
             ?>
             </div>
             <!-- Logon/Logout and Sign in -->

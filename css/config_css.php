@@ -1,17 +1,20 @@
 <style>
     <?php 
 
-
+    // Theme
     $colorprimary="#ff0000";
     $colorsecondary="#000000";
     $colorbasic="#FFFFFF";
     $font="font";
+    // Sponsor
     $tailleSponsor = 13.2;
-    
-
     $heightBox=165;
     $positionSponsor =1;
     $heightSponsor=60;
+    //Slider
+    $lienSlider=["#","#","#","#"];
+    $nombreSlider=4;
+    
     ?>
 
     @font-face {
@@ -147,8 +150,24 @@
         width: 100%;
         height: 600px;
         float: left;
-        background: aqua;
+        margin: 0 auto;
     }
+    .sliderbox{
+        width: 1200px;
+        height: 600px;
+        margin: 0 auto;
+    }
+  
+    .box_img{
+        width: 1200px;
+        height: 600px;
+        position: absolute;
+    }
+    .img_slider{
+        width: 100%;
+        height: 100%;
+    }
+    
      /*Cellules*/
     .cellule_container{
         float: left;
@@ -164,7 +183,7 @@
     .cellule_articles{
         float:left;
         width: 62.5%;
-        height: 800px;
+        height: 650px;
         margin-top: 15px;
         margin-bottom: 15px;
         background-color: <?php echo $colorsecondary ?>;;
@@ -178,7 +197,7 @@
     .cellule_activity{
         float: right;
         width: 35%;
-        height: 800px;
+        height: 650px;
         margin-top: 15px;
         margin-bottom: 15px;
         background-color: <?php echo $colorsecondary ?>;
@@ -191,13 +210,7 @@
     }
     .center_image{
         margin: 0 auto;
-        width: 1200px;
+        width: 1250px;
     }
-   /* .background_image{
-        float: left;
-        position: relative;
-        height: 800px;
-        width: 1200px;
-        
-    }*/
 </style>
+
