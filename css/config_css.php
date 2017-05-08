@@ -13,7 +13,7 @@
     $heightSponsor=60;
     //Slider
     $lienSlider=["#","#","#","#"];
-    $nombreSlider=4;
+    $nombreSlider=1;
     
     ?>
 
@@ -33,6 +33,9 @@
         height: 40px;
         width: 100%;
         background-color: <?php echo $colorprimary ?>;
+    }
+    a{
+        text-decoration: none;
     }
      /*Me suivre*/
     .container_follow {

@@ -9,7 +9,7 @@
             <?php
                 for($i = 0;$i<count($lienMenu);$i++)
                    echo '<li class="menu" href="'.$lienMenu[$i].'">'.$lienTexte[$i].'</li>';
-                ?>
+            ?>
         </ul>
     </nav>
 </div>

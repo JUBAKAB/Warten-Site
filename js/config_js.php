@@ -2,23 +2,38 @@
 <?php
 $php_array = $imageSponsor;
 $js_array = json_encode($php_array);
-echo "var javascript_array = ". $js_array . ";\n";
+echo "let javascript_array = ". $js_array . ";\n";
 ?>
-    
-    
+const imgSlider = document.getElementsByClassName("img_slider");
+animateSlider();
+
     
 function changeImage(imageSource,i,choose){
     if(choose){
-    var img = new Image();
+    let img = new Image();
     img.src = "img/"+ javascript_array[i] +"hover.png";   
     imageSource.src= img.src;
     }else{
-    var img = new Image();
+    let img = new Image();
     img.src = "img/"+ javascript_array[i] +".png";   
     imageSource.src= img.src;
     }
 }
-    
-var array_slider = document.getElementsByClassName("img_slider");
-    
+// In SetInterval
+function animateSlider(){
+for(var i = 0; i< imgSlider.length;i++)
+    if(i != imgSlider.length){
+        if(imgSlider[i].style.opacity== 100){
+           // Animate last I opacity
+           imgSlider[0].style.opacity = 100;
+        }
+    }else{
+        if(imgSlider[i].style.opacity== 100){
+        // Animate I opacity
+        imgSlider[i+1].style.opacity = 100;
+        }
+    }
+}
+
+
 </script>
