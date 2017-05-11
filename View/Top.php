@@ -7,7 +7,6 @@
         <title>Warten Site - Accueil</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
         <?php include('css/config_css.php');?>
-      
     </head>
 
     <body>
@@ -19,7 +18,7 @@
             <div class="container_rs">
                 <?php
                 for($i = 0;$i<count($lien);$i++)
-                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs" src="img/'.$pathpicture[$i].'.png"></a>';
+                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="img/'.$pathpicture[$i].'.png"></a>';
             ?>
             </div>
             <!-- Logon/Logout and Sign in -->
@@ -36,5 +35,33 @@
             </div>
         </header>
 
+       <!-- Menu et logo -->
+        <div class="contener_menu">
+            <div class="img_logo">
+                <img src="img/logoWarten.png" alt="Logo warten" width="100%" height="100%">
+            </div>
+            <nav>
+
+                <ul>
+                    <?php
+                for($i = 0;$i<count($lienMenu);$i++)
+                   echo ' <li class="menu" ><a href="index.php?link='.$lienMenu[$i].'">'.$lienTexte[$i].'</a></li>';
+                ?>
+                </ul>
+            </nav>
+        </div>
+        <!-- Sponsor -->
+        <div class="sponsor_container">
+            <div class="sponsor_box">
+                <div class="box">
+                    <?php
+                for($i = 0;$i<count($imageSponsor);$i++){
+                   echo '<a href="'.$lienSponsor[$i].'"><img src="img/'.$imageSponsor[$i].'.png" class="sponsor" style="margin-left:'.$positionSponsor.'%;"></a>';
+                }
+                    
+                ?>
+                </div>
+            </div>
+        </div>
 
 
