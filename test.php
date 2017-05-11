@@ -69,9 +69,15 @@ print_r($Examplesponsor->get_sponsor());echo'</br>';
 
 
 
-require_once __DIR__ . '/API/facebook-sdk-v5/autoload.php';
 
 
 
-?></body>
+?>
+
+
+
+
+
+
+</body>
 </html>
