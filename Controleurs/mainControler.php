@@ -7,11 +7,14 @@ include_once('topControler.php');
 if(isset($_GET['link'])){
 
 	switch ($_GET['link']) {
-		case 'sponsor':
+		case 'Sponsor':
 			include_once('sponsorControler.php');
 			break;
-		case 'accueil':
+		case 'Accueil':
 			include_once('accueilControler.php');
+			break;
+		case 'Live':
+			include_once('liveControler.php');
 			break;
 		default:
 			include_once('accueilControler.php');
