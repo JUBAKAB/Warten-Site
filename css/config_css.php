@@ -37,6 +37,10 @@
     a{
         text-decoration: none;
     }
+    
+    li{
+        float: left;
+    }
      /*Me suivre*/
     .container_follow {
         height: 40px;
@@ -111,6 +115,7 @@
     }
     
     .menu {
+        
         color: <?php echo $colorbasic ?>;
         float: left;
         list-style-type: none;

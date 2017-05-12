@@ -46,7 +46,7 @@
                 <ul>
                     <?php
                 for($i = 0;$i<count($lienMenu);$i++)
-                   echo ' <li class="menu" ><a href="index.php?link='.$lienMenu[$i].'">'.$lienTexte[$i].'</a></li>';
+                   echo ' <li  ><a class="menu" href="index.php?link='.$lienMenu[$i].'">'.$lienTexte[$i].'</a></li>';
                 ?>
                 </ul>
             </nav>
