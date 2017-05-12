@@ -1,4 +1,9 @@
-<?php include_once 'mainDAO.inc.php';  
+<?php
+session_start();
+
+
+
+ include_once 'mainDAO.inc.php';  
  include_once 'Object/mainObject.inc.php';
  ?>
 
@@ -67,7 +72,39 @@ print_r($Examplereseauxsociaux->get_reseauxsociaux());echo'</br>';
 print_r($Examplesponsor->get_sponsor());echo'</br>';
 		
 
+	
+echo'<br>';
 
+
+echo' ---------------------- TEST CONNEXION UTILISATEUR ------------------------ ' ;
+
+
+include_once"Controleurs/authentificationControler.php";
+
+	$auth = new Authentification();
+
+	// connexion
+	$auth->login("charly.strn@gmail.com","1234");
+	echo'<br>';
+	echo "Mail utilisé : charly.strn@gmail.com";
+	echo'<br>';
+	echo "Mdp utilisé : 1234";
+	echo'<br>';
+	echo " Statut renvoyé par le script: ";
+
+	// test de connexion
+	if ($auth->isLoggedOn()){
+		echo "logged";
+	}
+	else{
+		echo "not logged";
+	}
+		
+		echo'<br>';
+	echo' ----------------------------------------------------------------------------------------------- ' ;
+	// deconnexion
+	$auth->logout();
+	
 
 
 
