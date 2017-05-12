@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  sam. 06 mai 2017 à 16:10
--- Version du serveur :  5.7.17
--- Version de PHP :  5.6.30
+-- Client :  127.0.0.1
+-- Généré le :  Ven 12 Mai 2017 à 12:41
+-- Version du serveur :  5.7.14
+-- Version de PHP :  5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -49,7 +47,7 @@ CREATE TABLE `articles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `articles`
+-- Contenu de la table `articles`
 --
 
 INSERT INTO `articles` (`id`, `titre`, `texte_fr`, `texte_en`, `image`) VALUES
@@ -70,7 +68,7 @@ CREATE TABLE `biographie` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `biographie`
+-- Contenu de la table `biographie`
 --
 
 INSERT INTO `biographie` (`id`, `titre`, `texte_fr`, `texte_en`) VALUES
@@ -86,6 +84,13 @@ CREATE TABLE `grade` (
   `id` int(11) NOT NULL,
   `libelle` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `grade`
+--
+
+INSERT INTO `grade` (`id`, `libelle`) VALUES
+(1, 'Administrateur');
 
 -- --------------------------------------------------------
 
@@ -111,7 +116,7 @@ CREATE TABLE `langues` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `langues`
+-- Contenu de la table `langues`
 --
 
 INSERT INTO `langues` (`id`, `libellé`, `libcourt`) VALUES
@@ -145,6 +150,13 @@ CREATE TABLE `membre` (
   `grade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Contenu de la table `membre`
+--
+
+INSERT INTO `membre` (`id`, `login`, `password`, `date`, `twitch`, `grade`) VALUES
+(1, 'charly.strn@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '2017-05-26', 'ElNelyo', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -159,14 +171,14 @@ CREATE TABLE `menu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `menu`
+-- Contenu de la table `menu`
 --
 
 INSERT INTO `menu` (`id`, `libelle_fr`, `libelle_en`, `lien`) VALUES
-(1, 'Accueil', 'Home', '#Accueil'),
-(2, 'Nouveautés', 'News', '#Nouveaute'),
-(3, 'Live', 'Live', 'Lien'),
-(4, 'Sponsors', 'Sponsors', 'Lien'),
+(1, 'Accueil', 'Home', 'Accueil'),
+(2, 'Nouveautés', 'News', 'Nouveaute'),
+(3, 'Live', 'Live', 'Live'),
+(4, 'Sponsors', 'Sponsors', 'Sponsor'),
 (5, 'Á propos', 'About', 'Lien');
 
 -- --------------------------------------------------------
@@ -196,7 +208,7 @@ CREATE TABLE `prestation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `prestation`
+-- Contenu de la table `prestation`
 --
 
 INSERT INTO `prestation` (`id`, `titre`, `texte_fr`, `texte_en`, `image`) VALUES
@@ -232,7 +244,7 @@ CREATE TABLE `reseauxsociaux` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `reseauxsociaux`
+-- Contenu de la table `reseauxsociaux`
 --
 
 INSERT INTO `reseauxsociaux` (`id`, `nom`, `url`, `API`) VALUES
@@ -258,7 +270,7 @@ CREATE TABLE `sponsor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `sponsor`
+-- Contenu de la table `sponsor`
 --
 
 INSERT INTO `sponsor` (`id`, `nom`, `url`, `image`, `texte_fr`, `texte_en`) VALUES
@@ -275,7 +287,7 @@ INSERT INTO `sponsor` (`id`, `nom`, `url`, `image`, `texte_fr`, `texte_en`) VALU
 (11, 'newjabes', 'newjabes', 'newjabes', 's', 's');
 
 --
--- Index pour les tables déchargées
+-- Index pour les tables exportées
 --
 
 --
@@ -356,7 +368,7 @@ ALTER TABLE `sponsor`
   ADD PRIMARY KEY (`id`);
 
 --
--- Contraintes pour les tables déchargées
+-- Contraintes pour les tables exportées
 --
 
 --
@@ -375,7 +387,7 @@ ALTER TABLE `main_settings`
 -- Contraintes pour la table `membre`
 --
 ALTER TABLE `membre`
-  ADD CONSTRAINT `membre_ibfk_1` FOREIGN KEY (`id`) REFERENCES `grade` (`id`);
+  ADD CONSTRAINT `membre_ibfk_1` FOREIGN KEY (`grade`) REFERENCES `grade` (`id`);
 
 --
 -- Contraintes pour la table `rel_planning_joursemaine`
@@ -383,7 +395,6 @@ ALTER TABLE `membre`
 ALTER TABLE `rel_planning_joursemaine`
   ADD CONSTRAINT `rel_planning_joursemaine_ibfk_1` FOREIGN KEY (`jour`) REFERENCES `joursemaine` (`id`),
   ADD CONSTRAINT `rel_planning_joursemaine_ibfk_2` FOREIGN KEY (`live`) REFERENCES `planning` (`id`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
