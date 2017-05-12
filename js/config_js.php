@@ -7,8 +7,8 @@ echo "let javascript_array = ". $js_array . ";\n";
 const imgSlider = document.getElementsByClassName("img_slider");
 animateSlider();
 
-    
-function changeImage(imageSource,i,choose){
+// JS hover autogeneration
+function changeImage(imageSource,i,choose){ // Image nom , incrementation de la boucle,choix entre hover et nonHover
     if(choose){
     let img = new Image();
     img.src = "img/"+ javascript_array[i] +"hover.png";   

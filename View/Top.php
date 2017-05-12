@@ -7,6 +7,7 @@
         <title>Warten Site - Accueil</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
         <?php include('css/config_css.php');?>
+        <?php include('js/config_js.php');      ?>
     </head>
 
     <body>
@@ -56,7 +57,12 @@
                 <div class="box">
                     <?php
                 for($i = 0;$i<count($imageSponsor);$i++){
-                   echo '<a href="'.$lienSponsor[$i].'"><img src="img/'.$imageSponsor[$i].'.png" class="sponsor" style="margin-left:'.$positionSponsor.'%;"></a>';
+                   echo '<a href="'.$lienSponsor[$i].'">
+                 <img src="img/'.$imageSponsor[$i].'.png" 
+                 onmouseover="changeImage(this,'.$i.',true)" 
+                 onmouseout="changeImage(this,'.$i.',false)"
+                 class="sponsor" style="margin-left:'.$positionSponsor.'%;">
+                 </a>';
                 }
                     
                 ?>
