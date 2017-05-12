@@ -20,4 +20,15 @@ $req->BindParam(":X_id",$id);
 $req->exectute(); 
  return $this->cursorToObject($req);
 }
+
+
+
+ public function get_membre_by_mail($x){ 
+ $req = $this-> prepare("SELECT $this->_id, $this->_login, $this->_password, $this->_date, $this->_twitch, $this->_grade FROM membre WHERE login=:x" ); 
+
+ $req->bindValue(':x', $x, PDO::PARAM_STR);
+ $req->execute(); 
+ return $this->cursorToObject($req);
+}
+
 }
