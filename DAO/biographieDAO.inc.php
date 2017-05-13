@@ -1,4 +1,4 @@
-<?php 
+<?php include_once '../DAO.inc.php'; 
 
  class biographieDAO extends DAO {
 private $_id = "id as _id";
@@ -13,8 +13,35 @@ private $_texte_en = "texte_en as _texte_en";
 }
 
  public function get_biographie_By_PK(){ 
- $req = $this-> prepare("SELECT FROM biographie  WHERE  $this->_id, $this->_titre, $this->_texte_fr, $this->_texte_en");
-$req->exectute(); 
+ $req = $this-> prepare("SELECT   $this->_id ,  $this->_titre ,  $this->_texte_fr ,  $this->_texte_en  FROM biographie  WHERE ");
+$req->execute(); 
  return $this->cursorToObject($req);
 }
+
+ public function delete_biographie(){ 
+ $req = $this-> prepare("DELETE  FROM biographie  WHERE ");
+$resultat = $req->execute(); 
+ return $resultat;
 }
+
+ public function update_biographie($The_biographie){ 
+ $req = $this-> prepare("UPDATE  biographie  SET id = :X_id , titre = :X_titre , texte_fr = :X_texte_fr , texte_en = :X_texte_en  WHERE ");
+$req->bindValue(':X_id', $The_biographie->get_id());
+$req->bindValue(':X_titre', $The_biographie->get_titre());
+$req->bindValue(':X_texte_fr', $The_biographie->get_texte_fr());
+$req->bindValue(':X_texte_en', $The_biographie->get_texte_en());
+ $resultat = $req->execute(); 
+ return $resultat ;
+}
+
+ public function insert_biographie($The_biographie){ 
+ $req = $this-> prepare("INSERT INTO  biographie (id, titre, texte_fr, texte_en) VALUES (:X_id, :X_titre, :X_texte_fr, :X_texte_en) ");
+$req->bindValue(":X_id", $The_biographie->get_id());
+$req->bindValue(":X_titre", $The_biographie->get_titre());
+$req->bindValue(":X_texte_fr", $The_biographie->get_texte_fr());
+$req->bindValue(":X_texte_en", $The_biographie->get_texte_en());
+ $resultat = $req->execute(); 
+ return $resultat ;
+}
+
+ }
