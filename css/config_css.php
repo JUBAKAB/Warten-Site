@@ -13,7 +13,7 @@
     $heightSponsor=60;
     //Slider
     $lienSlider=["#","#","#","#"];
-    $nombreSlider=1;
+    $nombreSlider=2;
     
     ?>
 
@@ -123,7 +123,6 @@
         font-family: <?php echo $font ?>;
         cursor: pointer;
         font-size: 25px;
-        
     }
     
     .menu:hover {
@@ -219,6 +218,21 @@
     .center_image{
         margin: 0 auto;
         width: 1250px;
+    }
+    .backgroundcellules{
+        width: 100%;
+        height: 50px;
+        background: black url('img/banner_red_cellules.png') no-repeat 0 0; 
+        background-size: 100% 100%;
+        vertical-align: center;
+    }
+    .titleCellules{
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 35px;
+        font-family: <?php echo $font ?>;
+        cursor: default;
+        color: <?php echo $colorsecondary ?>;
     }
 </style>
 

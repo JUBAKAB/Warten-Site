@@ -25,7 +25,7 @@
             <!-- Logon/Logout and Sign in -->
             <div class="container_lang">
             <?php 
-          //  for($i = 0;$i<count($langue_url);$i++)
+                //for($i = 0;$i<count($langue_url);$i++)
                 echo"<img class=\"drapeau\" src=\"img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\">"
 
             ?>
