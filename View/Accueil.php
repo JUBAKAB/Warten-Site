@@ -2,10 +2,10 @@
 <div class="slider_container">
     <div class="sliderbox">
         <?php 
-            $slidermarche=false; // Laisse le slider en marche
+            $slidermarche=true; // Laisse le slider en marche
                 if ($slidermarche){
                     for($i = 0; $i <$nombreSlider;$i++){
-                            echo '<div class="box_img" style="z-index:'.$i.'"><a href="'.$lienSlider[$i].'"><img class="img_slider" src="img/img_slider'. $i.'.png"></img></a></div>';
+                            echo '<div class="box_img" ><a href="'.$lienSlider[$i].'"><img class="img_slider" src="img/img_slider'. $i.'.png"></img></a></div>';
                      }
                  }
         ?>
