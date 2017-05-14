@@ -1,4 +1,4 @@
-<?php include_once '../DAO.inc.php'; 
+<?php 
 
  class rel_planning_joursemaineDAO extends DAO {
 private $_id = "id as _id";

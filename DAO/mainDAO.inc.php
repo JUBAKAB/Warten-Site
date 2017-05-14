@@ -1,4 +1,4 @@
-<?php require_once'activiteDAO.inc.php';
+<?php  include_once'DAO.inc.php'; require_once'activiteDAO.inc.php';
 require_once'articlesDAO.inc.php';
 require_once'biographieDAO.inc.php';
 require_once'gradeDAO.inc.php';

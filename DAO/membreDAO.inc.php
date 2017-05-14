@@ -1,4 +1,4 @@
-<?php include_once '../DAO.inc.php'; 
+<?php 
 
  class membreDAO extends DAO {
 private $_id = "id as _id";
