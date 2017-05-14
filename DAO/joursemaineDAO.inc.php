@@ -10,10 +10,34 @@ private $_jour = "jour as _jour";
  return $this->cursorToObjectArray($req);
 }
 
- public function get_joursemaine_By_PK(){ 
- $req = $this-> prepare("SELECT FROM joursemaine  WHERE  $this->_id, $this->_jour $this->_id = :X_id");
+ public function get_joursemaine_By_PK($id){ 
+ $req = $this-> prepare("SELECT   $this->_id ,  $this->_jour  FROM joursemaine  WHERE  id = :X_id");
 $req->BindParam(":X_id",$id);
-$req->exectute(); 
+$req->execute(); 
  return $this->cursorToObject($req);
 }
+
+ public function delete_joursemaine($id){ 
+ $req = $this-> prepare("DELETE  FROM joursemaine  WHERE  id = :X_id");
+$req->BindParam(":X_id",$id);
+$resultat = $req->execute(); 
+ return $resultat;
 }
+
+ public function update_joursemaine($The_joursemaine){ 
+ $req = $this-> prepare("UPDATE  joursemaine  SET id = :X_id , jour = :X_jour  WHERE  id = :X_id");
+$req->bindValue(':X_id', $The_joursemaine->get_id());
+$req->bindValue(':X_jour', $The_joursemaine->get_jour());
+ $resultat = $req->execute(); 
+ return $resultat ;
+}
+
+ public function insert_joursemaine($The_joursemaine){ 
+ $req = $this-> prepare("INSERT INTO  joursemaine (id, jour) VALUES (:X_id, :X_jour) ");
+$req->bindValue(":X_id", $The_joursemaine->get_id());
+$req->bindValue(":X_jour", $The_joursemaine->get_jour());
+ $resultat = $req->execute(); 
+ return $resultat ;
+}
+
+ }
