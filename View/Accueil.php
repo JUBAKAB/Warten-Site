@@ -20,6 +20,27 @@
         <div class="backgroundcellules">
             <span class="titleCellules">Articles</span>
         </div>
+
+        <?php 
+          foreach ($LesArticles as $unArticle ) {
+
+
+         //id de l'article 
+          echo $unArticle->get_id();
+
+          //titre de l'article en francais  
+          echo $unArticle->get_titre();
+
+          //url de l'image de l'article
+          echo $unArticle->get_image();
+
+          // On affiche pas le texte , l'id de l'article redirigera vers une page qui affiche le texte
+          // Actuellement les articles apparaisse par ordre décroissant ( le plus récent en premier )
+
+          }
+
+
+          ?>
          <!-- Contenu des articles -->
         <!--         
            Ici il y'aura des photos des articles avec le lien de l'articles pour chaque articles  
@@ -41,12 +62,27 @@
                 -Photo mise sur instagramm (Jaune soleil)
                 -Articles mis par warten (Rouge)
                 -Lancement d'un live sur twitch (Violet)
+
+
+                // Cette partie est un peu plus compliqué je m'y penche quand je reviens du weekend.
        -->
         </div>
         <div class="cellule_biographie">
            <div class="backgroundcellules">
                  <span class="titleCellules">Biographie</span>
             </div>
+
+          <?php foreach ($LaBiographie as $uneBiographie) {
+            echo $uneBiographie->get_texte_fr();
+          }
+
+          // Faut que je vois avec toi pour revoir la base pour cette partie
+
+          ?> 
+
+
+
+
         <!-- Contenu de la Biographie -->
         <!--         
            Ici il y'aura la biographie de warten qui le presentera sur les grandes lignes avec pas mal
