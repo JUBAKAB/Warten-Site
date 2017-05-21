@@ -202,6 +202,7 @@
         background: black url('img/background_image.png') no-repeat 0 0;
         background-size: 100% 200%;
         background-position: left bottom;
+        color: <?php echo $colorbasic; ?>;
     }
     .cellule_articles {
         float: left;
@@ -273,9 +274,8 @@
         float: left;
         width: 100%;
         height: 250px;
-        margin-top: 150px;
-        background-color: <?php echo $colorsecondary;
-        ?>;
+        color: <?php echo $colorbasic; ?>;
+        background-color: <?php echo $colorsecondary; ?>;
         border-top: 3px <?php echo $colorprimary ?> solid;
         -moz-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
         -webkit-box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;

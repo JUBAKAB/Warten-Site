@@ -27,13 +27,13 @@
 
          //id de l'article 
           echo $unArticle->get_id();
-
+              echo '<br>';
           //titre de l'article en francais  
           echo $unArticle->get_titre();
-
+              echo '<br>';
           //url de l'image de l'article
           echo $unArticle->get_image();
-
+              echo '<br>';
           // On affiche pas le texte , l'id de l'article redirigera vers une page qui affiche le texte
           // Actuellement les articles apparaisse par ordre décroissant ( le plus récent en premier )
 
@@ -77,6 +77,7 @@
           }
 
           // Faut que je vois avec toi pour revoir la base pour cette partie
+          
 
           ?> 
 
