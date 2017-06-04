@@ -167,28 +167,49 @@
     
     
     /*  Slider  */
-    
-    .slider_container {
-        width: 100%;
-        height: 600px;
+    .mid_container{
+            width: 100%;
+            height: 500px;
+            float: left;
+        }
+    .container{
+        width: 1200px;
+        height: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .box_container{
+        width: 1200px;
+        height: 500px;
+        position: relative;
+        right:0px;
+    }
+    .imgContainer{
+        width: 1200px;
+        height: 100%;
         float: left;
-        margin: 0 auto;
     }
-    .sliderbox {
-        width: 1200px;
-        height: 600px;
-        margin: 0 auto;
-    }
-    .box_img {
-        width: 1200px;
-        height: 600px;
-        position: absolute;
-    }
-    .img_slider {
+    .img{
         width: 100%;
         height: 100%;
     }
+    .btnLeft{
+        position: relative;
+        float: left;
+        z-index: 200;
+        bottom:270px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
     
+    .btnRight{
+        position: relative;
+        float: right;
+        z-index: 200;
+        bottom:270px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
     
     /*  Cellules  */
     

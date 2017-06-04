@@ -7,7 +7,7 @@
         <title>Warten Site - Accueil</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
         <?php include('css/config_css.php');?>
-        <?php include('js/config_js.php');      ?>
+        <?php include('js/config_js.php');?>
     </head>
 
     <body>
