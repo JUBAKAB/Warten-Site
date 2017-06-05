@@ -45,19 +45,78 @@
           //url de l'image de l'article
           echo $unArticle->get_image();
               echo '<br>';
-          // On affiche pas le texte , l'id de l'article redirigera vers une page qui affiche le texte
-          // Actuellement les articles apparaisse par ordre décroissant ( le plus récent en premier )
-
+        
+        /* 
+            --------------Articles-------------
+        
+    Ceux avec une étoile sont ceux qui sont répéter dans les deux pages
+        
+     Panel dans l'accueil
+      * - ID de l'articles
+        - Lien de l'image Slider (Miniature utilisé aussi pour l'article en bas)
+        - MiniDescription de l'article
+      * - Sujet
+      * - Categorie
+        - Url
+      * - Date de création
+      
+     Page Article (Meme page pour tous : Routage sur l'ID different)
+      * - ID Article
+        - Lien de l'image banniere
+      * - Sujet
+      * - Categorie
+        - Article
+      * - Date de création
+      
+        --------------Gestion d'Articles-------------
+        
+        - Menu "Gestion d'Articles" : 
+                * Liste des articles existants sous forme de tableau
+                * Filtrage sous menu déroulant : 
+                    - Sujet (Par ordre alphabétique et par ordre inversé alphabétique)
+                    - Categorie (Par ordre alphabétique et par ordre inversé alphabétique)
+                    - Date de création (Par ordre croissant et décroissant)
+                * Recherche d'article par sujet,categorie, mot dans les articles (via une barre de recherche)
+                * Bouton Nouvelle Article (En dehors du tableau)
+                * Bouton Modifier d'un article (Lier à l'article dans le tableau et si il est modifier par un autre Message disant que la modification est impossible)
+                * Bouton Suppression d'un article (Lier à l'article dans le tableau  avec confirmation et suppression si "Oui")
+                * Zone montrant quand le fichier sera "Publié" (Si il est paru on mets "Publié" sinon on mets la date ou il sera "Publié" )
+                
+                
+        --------------Nouvelle Articles-------------
+        
+            * Edition des champs suivant obligatoire
+                    - Titre de l'article (Sujet)
+                    - Upload de l'image pour le slider (1200x500)
+                    - Upload de l'image pour la banniere (1200x300)
+                    - MiniDescription de l'article
+                    - Article avec Gestion du BBcode pour afficher des couleurs et des images.
+                    - Categorie (Pouvant etre créer ou séléctionné dans un menu déroulant si déja existant)
+                    - Date de publication (Gestion par une horloge Date et Heure) 
+                    
+             * Bouton
+                    - Créer un nouvelle article
+                    - Prévisualisée l'articles (page de prévisualisation qui créer une page temporaire et elle est supprimé au bout d'un certain temps (3h)).
+                    -Annuler les modifications
+                    
+         --------------Modification d'Articles-------------         
+               * Edition des champs suivant possible
+                    - Titre de l'article (Sujet)
+                    - Upload de l'image pour le slider (1200x500)
+                    - Upload de l'image pour la banniere (1200x300)
+                    - MiniDescription de l'article
+                    - Article avec Gestion du BBcode pour afficher des couleurs et des images.
+                    - Categorie (Pouvant etre créer ou séléctionné dans un menu déroulant si déja existant)
+                    - Date de publication (Gestion par une horloge Date et Heure)
+              * Bouton
+                    - Modification de l'article nouvelle article
+                    - Prévisualisée l'articles (page de prévisualisation qui créer une page temporaire et elle est supprimé au bout d'un certain temps (3h)).
+                    -Annuler les modifications
+        */
           }
 
 
           ?>
-            <!-- Contenu des articles -->
-            <!--         
-           Ici il y'aura des photos des articles avec le lien de l'articles pour chaque articles  
-           Procédé dans la base pour recuperer les X derniers et les afficher ici avec leur image
-           ou juste le lien de l'image ex : img/img_article0.png       
-       -->
         </div>
 
         <div class="cellule_activity">
