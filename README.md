@@ -17,6 +17,8 @@
     * Footer
     * Logo
     * Connexion/Inscription
+    * ScrollBar
+    * Lien Sponsor (vers un autre onglet)
 * Fonctionnel Back
     * Récupérer la BDD
         - Sponsor
