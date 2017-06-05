@@ -205,7 +205,7 @@
           
     -->
 
-    </div>
+    </div>    
 
 </div>
 <script src="js/scriptSlider.js"></script>

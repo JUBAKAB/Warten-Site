@@ -47,5 +47,30 @@
     * A propos
     * Modal Connexion / Inscription
     * Dashboard
+        - Gestion de Rédaction
+        - Gestion de Sponsors
+        - Gestion de Slider
+        - Gestion de Contenu
+        - Gestion d'Activité
+        - Gestion de Réseaux
+        - Gestion des Utlilisateurs
+        - Gestion des Droits
+        - Gestion des Statistiques
+        - Gestion de Traduction
+        - Gestion de Mail
+        - Gestion des Services
+        - Gestion d'Erreur
+        - Gestion du Planning
+        - Gestion des Lives
+        - Gestion de la Maintenance
     * Articles
+    * Deconnexion
+    * ProfilConnécté
+    * ProfilNonConnécté
+    * Modifier le profil
+    * CGU
+    * Message & Notif
+    * Parametre
+    * Maintenance
+    * Page Erreur HTTP (Toute)
 * Changement de Langue 
