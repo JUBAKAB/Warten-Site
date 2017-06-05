@@ -219,6 +219,15 @@
                     
                     * Parametre de blocage
                     * Parametre de message & notif
+                                                         
+                     ---------Profil Non Connecté--------
+                       
+                        Page de visuel de montrant la Photo à gauche de profil
+                        avec en dessous une biographie et quelques infos mis dans la page Modifier profil
+                        Ensuite sur tout le reste une Zone de texte pour vous si autorisé par les parametres
+                        sur la droite en haut avec en bas des posts.
+                        Au dessus de la zone de texte une banniere de la page de profil ciblé
+                        Separer en 2 zones
                                                           
                     
                     
@@ -229,6 +238,12 @@
     <!-- Menu et logo -->
     <div class="contener_menu">
         <div class="img_logo">
+           <!--
+           Gestion du logo
+           Gérer dans "Gestion de contenu"           
+           
+           
+           -->
             <img src="img/logoWarten.png" alt="Logo warten" width="100%" height="100%">
         </div>
         <nav>
@@ -242,6 +257,12 @@
         </nav>
     </div>
     <!-- Sponsor -->
+    <!--
+           ---------------- Gestion des sponsors ------------
+           
+        Les sposnsors sont gérér dans la partie Dashboard "Gestion des sponsors"
+    
+    -->
     <div class="sponsor_container">
         <div class="sponsor_box">
             <div class="box">
