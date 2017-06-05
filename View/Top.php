@@ -77,9 +77,11 @@
                 }
                
              /* 
+             
                 Langage :
                 
                 Faire un bouton intérupeur entre les deux versions et faire un routage (en/index.php par exemple)
+                
                 
              */
             ?>
@@ -90,6 +92,7 @@
             
          <!--
                 ---------Inscription--------
+                
                 Formulaire d'inscription
                     - Text Nom
                     - Text Pseudo
@@ -112,12 +115,14 @@
                     * Vous n'avez pas accepter la CGU
                     
                 -------Gestion de la CGU-------
-                
+                                
                 Menu "Gestion contenu":
                    Gestion de la CGU
                     - Champs de texte avec la CGU
                     - Bouton Modification de la CGU
+                    
                   ---------Connexion--------
+                  
                  - Pseudo ou Mail
                  - Mot de passe
                  - Lien "Mot de passe oublié ?"
@@ -128,13 +133,16 @@
                     * Pseudo incorrect
                     * Mail incorrect
                     * Mot de passe incorrect
+                    
                    ---------Mot de passe oublié--------
+                   
                   *Mail Mettre son mail
                     Erreur possible :
                         *Ce mail correspond à aucun mail connu.
                     Message possible
                         *Mail en attente nous vous enverrons un mail sous 48h
                          Mail envoyé par la fonction mail() en php qui ne demande pas de serveur smtp. Envoie d'un lien sur une page qui demande un token lier au compte par le mail qui se trouve dans l'url du lien et qui est verifier pour acceder à la page et l'on va sur la page "Nouveaux mot de passe"
+                         
                     ---------Nouveaux mot de passe--------
                     
                     Deux champs de texte avec mot de passe et  retaper le mot de passe. ainsi que valider.
@@ -144,7 +152,76 @@
                         * Mot de passe trop petit
                         * Mot de passe trop grand
                         * Mot de passe confirmé incorrecte par rapport au premier
-                
+                        
+                    ---------Modal Connexion/Inscription--------
+                    
+                    Deux onglet qui pemettrons de jongler entre les deux modules
+                    
+                    ---------Menu Déroulant de l'utilisateur--------
+                          
+                           -Pseudo de la personne (Menu déroulant)
+                            * Afficher le profil (Page profil connecté)
+                            * Modifier votre profil (page Modification Profil) 
+                            * Dashboard (Si il y a le droit)
+                            * Tableau des Invitations (page Invitation)
+                            * Tableau des Messages (page MessageEtNotif)
+                            * Tableau des Succés (page Succés)
+                            * Modifier vos Paramètres (page Paramètre)
+                            * Déconnexion
+                            
+                    ---------Profil Connecté--------
+                       
+                        Page de visuel de montrant la Photo à gauche de profil
+                        avec en dessous une biographie et quelques infos mis dans la page Modifier profil
+                        Ensuite sur tout le reste une Zone de texte sur la droite en haut avec en bas des posts.
+                        Au dessus de la zone de texte une banniere
+                        Separer en 2 zones
+                        
+                    ------Modification Profil---------
+                       
+                        -Informations personnels
+                            * Nom
+                            * Pseudo
+                            * Mot de passe
+                            * Confirmation Mot de passe
+                            * Mail
+                            * Age
+                            * Activités professionnel
+                        -Autres informations
+                            * Biographie
+                            * Jeux
+                            * Config
+                        -Lien
+                            * Reseaux sociaux
+                            * Site Internet 
+                        -Visuel
+                            *Image Profil Upload
+                            *Image Banniere Upload
+                        
+                    ------DashBoard--------
+                    
+                    Envoie sur la page dashboard et Non affiché si les droits sont insuffisant
+                    
+                    ------- Tableau des Invitations -----
+                    
+                    Invitation à des groupes de chat ou Invitation en amis
+                    
+                    ----- Message Et Notif --------
+                    
+                    Affichage des messages Envoyé par les groupes de personne
+                    Affichage des notification reçu  (Commentaire, GamePoke, WarTenLikes etc)
+                    
+                    ----- Warten Succés ------
+                    
+                    Tableaux des succés réalisé
+                                     
+                    -------- Paramètres --------
+                    
+                    * Parametre de blocage
+                    * Parametre de message & notif
+                                                          
+                    
+                    
                  -->
         </div>
     </header>
