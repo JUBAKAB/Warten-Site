@@ -7,9 +7,41 @@
     <link rel="icon" type="image/png" href="img/logo.png" />
     <?php include('css/config_css.php');?>
     <?php include('js/config_js.php');?>
+    <?php
+    /*Recuperation des langues avec la variable $langue */
+    if(!isset($_GET["langue"])){
+        $langue = "fr";
+    }else if($_GET["langue"] == "en"){
+         $langue = "en";
+    }else if($_GET["langue"] == "fr"){
+         $langue = "fr";
+    }else{
+         $langue = "fr";
+    }
+     /*
+        Gestion des traductions :
+        
+            Si la page n'est pas traduite alors on mets que l'élément n'est pas traduit et on mets un bouton "Change Language" ou "Changement de langue"
+            
+        Gestion des traductions dans la dashboard:
+        
+        Menu "gestion des traductions"
+        
+            Gestion de traduction paragraphe par paragraphe
+            et liste de tout ce qui n'est pas traduit et tableau de ce qui est déja traduit.
+        Traducteur avec BBCode gestion des couleurs et des gras etc
+        
+     
+     */
+    
+    
+        
+    
+    ?>
+    
 </head>
 
-<body>
+<body lang="<?php echo $langue;?>">
     <header>
         <!-- Me suivre -->
         <div class="container_follow">
@@ -19,19 +51,101 @@
             <?php
                 for($i = 0;$i<count($lien);$i++)
                 echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="img/'.$pathpicture[$i].'.png"></a>';
+      /*
+        Gestion des réseaux sociaux :
+                5 Réseaux sociaux max
+        Gestion des réseaux sociaux dans la dashboard:
+            Menu "gestion de contenu"
+                Gestion des réseaux sociaux
+                - Ajouter un réseaux créer un module
+                - Module :
+                    Menu deroulant avec les réseaux disponible
+                    L'url du site
+     */
+            
             ?>
         </div>
-        <!-- Logon/Logout and Sign in -->
         <div class="container_lang">
-            <?php 
-                //for($i = 0;$i<count($langue_url);$i++)
-                echo"<img class=\"drapeau\" src=\"img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\">"
-
+            <?php
+                
+                if($langue == "fr"){
+                     echo"<a href='index.php?langue=en'><img class=\"drapeau\" src=\"img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\"></a>";
+                }else if($langue == "en"){
+                     echo"<a href='index.php?langue=fr'><img class=\"drapeau\" src=\"img/".$langue_url[1]."_drapeau.png\" alt=\"Changer la langue\"></a>";
+                }else{
+                    
+                }
+               
+             /* 
+                Langage :
+                
+                Faire un bouton intérupeur entre les deux versions et faire un routage (en/index.php par exemple)
+                
+             */
             ?>
         </div>
         <div class="container_log">
             <a href="#Inscription">Inscription</a>
             <a href="#Connexion">Connexion</a>
+            
+         <!--
+                ---------Inscription--------
+                Formulaire d'inscription
+                    - Text Nom
+                    - Text Pseudo
+                    - Mail EMail
+                    - Pass Mot de passe (entre 5 et 20 caractere)
+                    - Pass Confirmation du mot de passe
+                    - Checkbox Accepter les CGU (Lien vers une page de CGU)
+                    -Bouton S'enregister avec Facebook (rempli tout les champs)
+                    -Bouton S'enregister avec Twitter (rempli tout les champs)
+                    -Bouton S'enregister avec Twitch (rempli tout les champs)
+                    - Bouton S'enregister
+                    - Bouton Annuler
+                Erreur possible :
+                    * Pseudo existant
+                    * Mail existant
+                    * Mail incorrect (mail jetable gerer)
+                    * Mot de passe trop petit
+                    * Mot de passe trop grand
+                    * Mot de passe confirmé incorrecte par rapport au premier
+                    * Vous n'avez pas accepter la CGU
+                    
+                -------Gestion de la CGU-------
+                
+                Menu "Gestion contenu":
+                   Gestion de la CGU
+                    - Champs de texte avec la CGU
+                    - Bouton Modification de la CGU
+                  ---------Connexion--------
+                 - Pseudo ou Mail
+                 - Mot de passe
+                 - Lien "Mot de passe oublié ?"
+                 - Checkbox "Se souvenir de moi"
+                 - Bouton Connexion
+                 - Bouton Annuler
+                 Erreur possible :
+                    * Pseudo incorrect
+                    * Mail incorrect
+                    * Mot de passe incorrect
+                   ---------Mot de passe oublié--------
+                  *Mail Mettre son mail
+                    Erreur possible :
+                        *Ce mail correspond à aucun mail connu.
+                    Message possible
+                        *Mail en attente nous vous enverrons un mail sous 48h
+                         Mail envoyé par la fonction mail() en php qui ne demande pas de serveur smtp. Envoie d'un lien sur une page qui demande un token lier au compte par le mail qui se trouve dans l'url du lien et qui est verifier pour acceder à la page et l'on va sur la page "Nouveaux mot de passe"
+                    ---------Nouveaux mot de passe--------
+                    
+                    Deux champs de texte avec mot de passe et  retaper le mot de passe. ainsi que valider.
+                    Erreur possible :
+                        * Identification requise (pas de token)
+                        * Identification déjà réalisé (revenir à l'ecran d'accueil)
+                        * Mot de passe trop petit
+                        * Mot de passe trop grand
+                        * Mot de passe confirmé incorrecte par rapport au premier
+                
+                 -->
         </div>
     </header>
 
