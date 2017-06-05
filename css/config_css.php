@@ -304,5 +304,39 @@
         box-shadow: 0px 0px 15px 0px <?php echo $colorbasic ?>;
         filter: progid:DXImageTransform.Microsoft.Shadow(color=<?php echo $colorbasic ?>, Direction=NaN, Strength=15);
     }
+    /*ScrollBar*/
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-button {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: <?php echo $colorsecondary ?>;
+      border: 1px solid <?php echo $colortertiaire ?>;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: <?php echo $colorbasic ?>;
+    }
+    ::-webkit-scrollbar-thumb:active {
+      background: <?php echo $colorsecondary ?>;
+    }
+    ::-webkit-scrollbar-track {
+      background: <?php echo $colorprimary ?>;
+      border: 0px none <?php echo $colorbasic ?>;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track:hover {
+      background: <?php echo $colortertiaire ?>;
+    }
+    ::-webkit-scrollbar-track:active {
+      background: <?php echo $colortertiaire ?>;
+    }
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
 
 </style>
