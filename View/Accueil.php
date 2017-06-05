@@ -125,17 +125,18 @@
             </div>
             <!-- Contenu des Activités -->
             <!--         
-           Ici il y'aura le defilement des activités reçu par du AJAX en temps réeel pour que l'on puisse
-           par cette catégorie acceder au lien suivant :
-                -Post facebook sur la page de warten (Bleu foncé)
-                -Tweet sur le twitter de warten  (Bleu cyan)
-                -Photo mise sur instagramm (Jaune soleil)
-                -Articles mis par warten (Rouge)
-                -Lancement d'un live sur twitch (Violet)
-
-
-                // Cette partie est un peu plus compliqué je m'y penche quand je reviens du weekend.
-       -->
+              
+               Ici il y'aura le defilement des activités reçu par du AJAX en temps réeel pour que l'on puisse
+               par cette catégorie acceder au lien suivant :
+                    -Post facebook sur la page de warten (Bleu foncé)
+                    -Tweet sur le twitter de warten  (Bleu cyan)
+                    -Photo mise sur instagramm (Jaune soleil)
+                    -Articles mis par warten (Rouge)
+                    -Lancement d'un live sur twitch (Violet)
+                    
+                    
+             Activation Via le dashboard sur les activités
+           -->
         </div>
         <div class="cellule_biographie">
             <div class="backgroundcellules">
@@ -145,22 +146,21 @@
             <?php foreach ($LaBiographie as $uneBiographie) {
             echo $uneBiographie->get_texte_fr();
           }
-
-          // Faut que je vois avec toi pour revoir la base pour cette partie
           
-
+    /*
+        Contenu de la Biographie 
+           Ici il y'aura la biographie de warten qui le presentera sur les grandes lignes avec pas mal
+           d'information comme :
+           - Photo de Warten sur la gauche
+           - Ses infos personnels (nom, prénom, lieu, age, activité professionnel, sponsor) sur la droite 
+           - Ses Structures, son parcours professionnel , son envie de streamer, ses jeux particulier sur lesquels il joue,... en dessous voir dossier Marketing (Donner dans la convos)
+       */
           ?>
 
 
 
 
-            <!-- Contenu de la Biographie -->
-            <!--         
-           Ici il y'aura la biographie de warten qui le presentera sur les grandes lignes avec pas mal
-           d'information comme :
-           - Ses infos personnels (nom, prenom, lieu, age, activité professionnel, sponsor,...)
-           - Ses Structures, son parcours professionnel , son envie de streamer, ses jeux particulier sur lesquels il joue,...
-       -->
+       
         </div>
     </div>
     <div class="footer_space">
