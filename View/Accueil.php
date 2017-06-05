@@ -3,6 +3,14 @@
     <div class="container">
         <div class="box_container" id="moveSlider">
             <?php 
+              /* 
+            --------------Slider-------------
+            - Image géréer
+            --------------Gestion Slider-------------
+            - Lier avec un article créer et ou le slider est afficher
+            - Recuperer l'url des derniers articles qui n'ont pas de SLIDER
+            
+            */
                 $slidermarche=true; // Laisse le slider en marche
                     if ($slidermarche){
                         for($i = 0; $i <$nombreSlider;$i++){
@@ -16,10 +24,10 @@
             ?>
         </div>
         <img src="img/leftarrow.png" alt="Précédente" onclick="rightSlider()" class="btnLeft">
-    <img src="img/rightarrow.png" alt="Suivant" onclick="nextSlider()" class="btnRight">
+        <img src="img/rightarrow.png" alt="Suivant" onclick="nextSlider()" class="btnRight">
     </div>
 </div>
-  
+
 
 
 
@@ -67,6 +75,7 @@
       * - Categorie
         - Article
       * - Date de création
+      * - Liste des commentaires avec Gestion de signalement avec un message du signalement et le type
       
         --------------Gestion d'Articles-------------
         
@@ -87,7 +96,8 @@
         
             * Edition des champs suivant obligatoire
                     - Titre de l'article (Sujet)
-                    - Upload de l'image pour le slider (1200x500)
+                    - Upload de l'image pour le slider (1200x500) // Possibilité d'enlever le slider 
+                    (Il se mettra donc en bas)
                     - Upload de l'image pour la banniere (1200x300)
                     - MiniDescription de l'article
                     - Article avec Gestion du BBcode pour afficher des couleurs et des images.
@@ -112,6 +122,14 @@
                     - Modification de l'article nouvelle article
                     - Prévisualisée l'articles (page de prévisualisation qui créer une page temporaire et elle est supprimé au bout d'un certain temps (3h)).
                     -Annuler les modifications
+        --------------Gestion des commentaires de chaque page-------------
+        
+                - Menu "Gestion des commentaires" :
+                    Liste des commentaires par articles
+                    Gestion de suppression avec un triangle point d'exclamation jaune pour avertir d'un signalement
+                    Gestion des signalement avec messages de l'utilisateur
+                    
+            
         */
           }
 
@@ -124,8 +142,9 @@
                 <span class="titleCellules">Activités</span>
             </div>
             <!-- Contenu des Activités -->
-            <!--         
-              
+
+
+            <!-- 
                Ici il y'aura le defilement des activités reçu par du AJAX en temps réeel pour que l'on puisse
                par cette catégorie acceder au lien suivant :
                     -Post facebook sur la page de warten (Bleu foncé)
@@ -136,7 +155,7 @@
                     
                     
              Activation Via le dashboard sur les activités
-           -->
+            -->
         </div>
         <div class="cellule_biographie">
             <div class="backgroundcellules">
@@ -148,23 +167,43 @@
           }
           
     /*
+          --------------Biographie-------------
         Contenu de la Biographie 
            Ici il y'aura la biographie de warten qui le presentera sur les grandes lignes avec pas mal
            d'information comme :
            - Photo de Warten sur la gauche
            - Ses infos personnels (nom, prénom, lieu, age, activité professionnel, sponsor) sur la droite 
            - Ses Structures, son parcours professionnel , son envie de streamer, ses jeux particulier sur lesquels il joue,... en dessous voir dossier Marketing (Donner dans la convos)
+            ------------- Gestion de Biographie-------------
+        - Menu "Gestion de contenu" :
+            Gestion de la Biographie
+            
+            - Photo modifiable
+            - Informations personnels modifiable
+            - Autre Information sur la Biographie modifiable
+            
+            Bouton Valider (Choix si on est sur pour les modifications)
+            Bouton Défault (Ancienne sauvegarde des éléments)
        */
           ?>
 
 
 
 
-       
+
         </div>
     </div>
     <div class="footer_space">
-
+<!--
+          --------------Footer-------------
+          
+          - Logo récupérer d'en haut  de la page
+          - Liste Menu avec lien
+          - Liste Reseaux sociaux
+          - Liste Sponsors
+          
+          
+    -->
 
     </div>
 
