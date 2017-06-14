@@ -14,6 +14,14 @@ private $_grade = "grade as _grade";
  return $this->cursorToObjectArray($req);
 }
 
+
+ public function get_membre_by_mail($email){ 
+ $req = $this-> prepare("SELECT $this->_id, $this->_login, $this->_password, $this->_date, $this->_twitch, $this->_grade FROM membre WHERE login = :X_mail" ); 
+ $req->BindParam("X_mail",$email);
+ $req->execute(); 
+ return $this->cursorToObject($req);
+}
+
  public function get_membre_By_PK($id){ 
  $req = $this-> prepare("SELECT   $this->_id ,  $this->_login ,  $this->_password ,  $this->_date ,  $this->_twitch ,  $this->_grade  FROM membre  WHERE  id = :X_id");
 $req->BindParam(":X_id",$id);

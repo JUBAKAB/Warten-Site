@@ -87,8 +87,8 @@
             ?>
         </div>
         <div class="container_log">
-            <a href="#Inscription">Inscription</a>
-            <a href="#Connexion">Connexion</a>
+            <a href="index.php?link=Inscription">Inscription</a>
+            <a href="index.php?link=Connexion">Connexion</a>
             
          <!--
                 ---------Inscription--------

@@ -1,23 +1,23 @@
 <?php 
 
-include_once 'Controleurs/authentification.php';
+include_once 'Controleurs/authentificationControler.php';
 
 $auth = new Authentification();
-/*
-if(!isset($_POST['login'])&&!isset($_POST['pass'])){
-	include "../vues/vueNonConnecte.php";
+
+if(!isset($_POST['mail'])&&!isset($_POST['password'])){
+	echo' non connecté';
 
 	}else{
 
-		$Login = $_POST['login'];		
-		$Mdp = $_POST['pass'];
+		$Login = $_POST['mail'];		
+		$Mdp = $_POST['password'];
 		$auth->login($Login,$Mdp);
 			if ($auth->isLoggedOn()){
-				include"../vues/vueConnecte.php";
-				$utilisateurConnecte = $auth->getUtilisateurLoggedOn;
+				echo'oui';
+				
 				
 				}else{
-					include "../vues/vueNonConnecte.php";
+					echo'non connecte';
 					
 		
 					}
@@ -26,7 +26,6 @@ if(!isset($_POST['login'])&&!isset($_POST['pass'])){
 
 	
 
-	*/
-
 	// A gérer une fois l'interface créer : voir les test.php en attendant			
 
+include_once'View/Connexion.php';

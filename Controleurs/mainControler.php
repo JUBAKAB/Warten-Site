@@ -16,6 +16,12 @@ if(isset($_GET['link'])){
 		case 'Live':
 			include_once('liveControler.php');
 			break;
+		case 'Inscription':
+			include_once('inscriptionControler.php');
+			break;
+		case 'Connexion':
+			include_once('connexionControler.php');
+			break;
 		default:
 			include_once('accueilControler.php');
 			break;
