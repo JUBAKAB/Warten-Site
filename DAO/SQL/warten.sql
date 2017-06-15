@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 21 Mai 2017 à 09:52
--- Version du serveur :  5.7.14
--- Version de PHP :  5.6.25
+-- Généré le :  Jeu 15 Juin 2017 à 03:33
+-- Version du serveur :  10.1.21-MariaDB
+-- Version de PHP :  5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -176,11 +176,11 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `libelle_fr`, `libelle_en`, `lien`) VALUES
-(1, 'Accueil', 'Home', 'Accueil'),
-(2, 'Nouveautés', 'News', 'Nouveaute'),
-(3, 'Live', 'Live', 'Live'),
-(4, 'Sponsors', 'Sponsors', 'Sponsor'),
-(5, 'Á propos', 'About', 'Lien');
+(1, 'Accueil', 'Home', 'index'),
+(2, 'Nouveautés', 'News', 'news'),
+(3, 'Live', 'Live', 'live'),
+(4, 'Sponsors', 'Sponsors', 'sponsors'),
+(5, 'Á propos', 'About', 'about');
 
 -- --------------------------------------------------------
 
