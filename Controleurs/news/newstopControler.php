@@ -1,5 +1,4 @@
 <?php
-
 /*Donnée envoyée et transmise*/
 $ReseauxSociauxDAO = new reseauxsociauxDAO();
 $LesReseauxSociaux = $ReseauxSociauxDAO->get_reseauxsociaux();
@@ -26,11 +25,7 @@ foreach ($LesSponsors as $unSponsor) {
 	$lienSponsor[] = $unSponsor->get_url();
 	$imageSponsor[] = $unSponsor->get_image();
 }
-
-
 /*Corp de la page*/
-include_once'View/include/accueil/HeaderAccueil.php';
+include_once'View/include/news/HeaderNews.php';
 include_once'View/include/general/Top.php';
-
-
 ?>
