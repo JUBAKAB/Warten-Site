@@ -1,35 +1,11 @@
-<?php
+﻿<?php
 
+/*Lien avec la base de donnée*/
+require_once('param/mainDAO.inc.php');
+/*Page entière*/
+include_once('general/topControler.php');
+include_once('accueil/sponsorControler.php');
+include_once('accueil/accueilControler.php');
+include_once('general/botControler.php');
 
-require_once('mainDAO.inc.php');
-include_once('topControler.php');
-
-if(isset($_GET['link'])){
-
-	switch ($_GET['link']) {
-		case 'Sponsor':
-			include_once('sponsorControler.php');
-			break;
-		case 'Accueil':
-			include_once('accueilControler.php');
-			break;
-		case 'Live':
-			include_once('liveControler.php');
-			break;
-		case 'Inscription':
-			include_once('inscriptionControler.php');
-			break;
-		case 'Connexion':
-			include_once('connexionControler.php');
-			break;
-		default:
-			include_once('accueilControler.php');
-			break;
-	}
-	
-}else{
-include_once('accueilControler.php');
-
-}
-
-include_once('Controleurs/botControler.php');?>
+?>

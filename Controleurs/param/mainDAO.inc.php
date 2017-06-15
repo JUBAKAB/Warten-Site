@@ -1,0 +1,17 @@
+<?php 
+include_once'DAO/ObjectLink/DAO.inc.php';
+require_once'DAO/ObjectLink/activiteDAO.inc.php';
+require_once'DAO/ObjectLink/articlesDAO.inc.php';
+require_once'DAO/ObjectLink/biographieDAO.inc.php';
+require_once'DAO/ObjectLink/gradeDAO.inc.php';
+require_once'DAO/ObjectLink/joursemaineDAO.inc.php';
+require_once'DAO/ObjectLink/languesDAO.inc.php';
+require_once'DAO/ObjectLink/main_settingsDAO.inc.php';
+require_once'DAO/ObjectLink/membreDAO.inc.php';
+require_once'DAO/ObjectLink/planningDAO.inc.php';
+require_once'DAO/ObjectLink/prestationDAO.inc.php';
+require_once'DAO/ObjectLink/rel_planning_joursemaineDAO.inc.php';
+require_once'DAO/ObjectLink/reseauxsociauxDAO.inc.php';
+require_once'DAO/ObjectLink/sponsorDAO.inc.php';
+require_once'DAO/ObjectLink/menuDAO.inc.php';
+?>
