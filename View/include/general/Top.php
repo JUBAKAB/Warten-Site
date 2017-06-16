@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Warten Site - Accueil</title>
     <link rel="icon" type="image/png" href="View/img/logo.png" />
+    <link rel="stylesheet" href="View/css/style.css">
     <?php include('View/css/config_css.php');?>
     <?php include('View/js/config_js.php');?>
     <?php
@@ -87,9 +88,16 @@
             ?>
         </div>
         <div class="container_log">
-            <a href="index.php?link=Inscription">Inscription</a>
-            <a href="index.php?link=Connexion">Connexion</a>
-            
+            <a href="#?w=500" rel="popup_2" class="poplight">Inscription</a>
+            <a href="#?w=500" rel="popup_1" class="poplight">Connexion</a>
+            <!-- PopUp -->
+            <div id="popup_1" class="popup_block">
+                Bien dans la connexion
+            </div>
+
+            <div id="popup_2" class="popup_block">
+                Bien dans l'inscription
+            </div>
          <!--
                 ---------Inscription--------
                 
