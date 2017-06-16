@@ -11,7 +11,7 @@
             <?php
                 for($i = 0;$i<count($imageSponsor);$i++){
                    echo '<a href="'.$lienSponsor[$i].'" target="_blank">
-                 <img src="img/'.$imageSponsor[$i].'.png" 
+                 <img src="View/img/'.$imageSponsor[$i].'.png" 
                  onmouseover="changeImage(this,'.$i.',true)" 
                  onmouseout="changeImage(this,'.$i.',false)"
                  class="sponsor" style="margin-left:'.$positionSponsor.'%;">

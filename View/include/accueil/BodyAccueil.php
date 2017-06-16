@@ -16,15 +16,15 @@
                         for($i = 0; $i <$nombreSlider;$i++){
                                 echo '<div class="imgContainer" >
                                         <a href="'.$lienSlider[$i].'">
-                                            <img class="img_slider img" src="img/img_slider'. $i.'.png"></img>
+                                            <img class="img_slider img" src="View/img/img_slider'. $i.'.png"></img>
                                         </a>
                                       </div>';
                          }
                      }
             ?>
         </div>
-        <img src="img/leftarrow.png" alt="Précédente" onclick="rightSlider()" class="btnLeft">
-        <img src="img/rightarrow.png" alt="Suivant" onclick="nextSlider()" class="btnRight">
+        <img src="View/img/leftarrow.png" alt="Précédente" onclick="rightSlider()" class="btnLeft">
+        <img src="View/img/rightarrow.png" alt="Suivant" onclick="nextSlider()" class="btnRight">
     </div>
 </div>
 

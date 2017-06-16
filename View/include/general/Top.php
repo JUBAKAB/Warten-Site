@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Warten Site - Accueil</title>
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <?php include('css/config_css.php');?>
-    <?php include('js/config_js.php');?>
+    <link rel="icon" type="image/png" href="View/img/logo.png" />
+    <?php include('View/css/config_css.php');?>
+    <?php include('View/js/config_js.php');?>
     <?php
     /*Recuperation des langues avec la variable $langue */
     if(!isset($_GET["langue"])){
@@ -50,7 +50,7 @@
         <div class="container_rs">
             <?php
                 for($i = 0;$i<count($lien);$i++)
-                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="img/'.$pathpicture[$i].'.png"></a>';
+                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="View/img/'.$pathpicture[$i].'.png"></a>';
       /*
         Gestion des réseaux sociaux :
                 5 Réseaux sociaux max
@@ -69,9 +69,9 @@
             <?php
                 
                 if($langue == "fr"){
-                     echo"<a href='index.php?langue=en'><img class=\"drapeau\" src=\"img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\"></a>";
+                     echo"<a href='index.php?langue=en'><img class=\"drapeau\" src=\"View/img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\"></a>";
                 }else if($langue == "en"){
-                     echo"<a href='index.php?langue=fr'><img class=\"drapeau\" src=\"img/".$langue_url[1]."_drapeau.png\" alt=\"Changer la langue\"></a>";
+                     echo"<a href='index.php?langue=fr'><img class=\"drapeau\" src=\"View/img/".$langue_url[1]."_drapeau.png\" alt=\"Changer la langue\"></a>";
                 }else{
                     
                 }
@@ -244,7 +244,7 @@
            
            
            -->
-            <img src="img/logoWarten.png" alt="Logo warten" width="100%" height="100%">
+            <img src="View/img/logoWarten.png" alt="Logo warten" width="100%" height="100%">
         </div>
         <nav>
 
