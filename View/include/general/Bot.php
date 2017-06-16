@@ -13,7 +13,7 @@
     </div>    
 
 </div>
-<script src="js/scriptSlider.js"></script>
+<script src="View/js/scriptSlider.js"></script>
 </body>
 
 </html>
