@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Warten Site - Nouveauté</title>
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <?php include('css/config_css.php');?>
-    <?php include('js/config_js.php');?>
+    <link rel="icon" type="image/png" href="View/img/logo.png" />
+    <?php include('View/css/config_css.php');?>
+    <?php include('View/js/config_js.php');?>
     <?php
     /*Recuperation des langues avec la variable $langue */
     if(!isset($_GET["langue"])){
