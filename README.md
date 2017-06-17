@@ -3,7 +3,7 @@
 ![Aperçu](https://image.noelshack.com/fichiers/2017/23/1496653222-sans-titre.png)
 
 * Couche DAO 
-    -Pour les données client / serveur
+    * Pour les données client / serveur
 * Couche View
     * Accueil (à finir)
     * Nouveauté (à completer)
