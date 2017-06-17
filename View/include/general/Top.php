@@ -31,25 +31,6 @@
         </div>
         <!-- Langue -->
         <div class="container_lang">
-            <?php
-                
-                if($langue == "fr"){
-                     echo"<a href='index.php?langue=en'><img class=\"drapeau\" src=\"View/img/".$langue_url[0]."_drapeau.png\" alt=\"Changer la langue\"></a>";
-                }else if($langue == "en"){
-                     echo"<a href='index.php?langue=fr'><img class=\"drapeau\" src=\"View/img/".$langue_url[1]."_drapeau.png\" alt=\"Changer la langue\"></a>";
-                }else{
-                    
-                }
-               
-             /* 
-             
-                Langage :
-                
-                Faire un bouton intérupeur entre les deux versions et faire un routage (en/index.php par exemple)
-                
-                
-             */
-            ?>
         </div>
         <!-- Login/Sign up -->
         <div class="container_log">

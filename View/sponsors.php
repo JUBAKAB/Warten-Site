@@ -1,1 +1,0 @@
-<!--Contenu de la page Sponsors.php-->
