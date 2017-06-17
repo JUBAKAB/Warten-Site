@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <link rel="stylesheet" href="View/css/style.css">
-</head>
 <!--        
        Gestion des traductions :
            
@@ -55,7 +51,8 @@
             <a href="#?w=500" rel="popup_1" class="poplight">Connexion</a>
             <!-- PopUp -->
             <div id="popup_1" class="popup_block">
-                Bien dans la connexion
+               
+                <?php include_once 'View/include/general/Connexion.php' ?>
             </div>
 
             <div id="popup_2" class="popup_block">
