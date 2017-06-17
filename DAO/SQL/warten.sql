@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 15 Juin 2017 à 03:33
+-- Généré le :  Sam 17 Juin 2017 à 12:34
 -- Version du serveur :  10.1.21-MariaDB
 -- Version de PHP :  5.6.30
 
@@ -176,7 +176,7 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `libelle_fr`, `libelle_en`, `lien`) VALUES
-(1, 'Accueil', 'Home', 'index'),
+(1, 'Accueil', 'Home', 'home'),
 (2, 'Nouveautés', 'News', 'news'),
 (3, 'Live', 'Live', 'live'),
 (4, 'Sponsors', 'Sponsors', 'sponsors'),
