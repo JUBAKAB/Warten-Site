@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^home?$ accueil.php
+RewriteRule ^news?$ news.php
+RewriteRule ^live?$ live.php
+RewriteRule ^sponsors?$ sponsors.php
+RewriteRule ^about?$ about.php

@@ -205,7 +205,7 @@
             <ul>
                 <?php
                 for($i = 0;$i<count($lienMenu);$i++)
-                   echo ' <li  ><a class="menu" href="'.$lienMenu[$i].'.php">'.$lienTexte[$i].'</a></li>';
+                   echo ' <li  ><a class="menu" href="'.$lienMenu[$i].'">'.$lienTexte[$i].'</a></li>';
                 ?>
             </ul>
         </nav>

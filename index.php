@@ -1,3 +1,3 @@
-<?php include_once('Controleurs/accueilControler.php');?>
-
-
+<?php
+header('Location: home'); 
+?>
