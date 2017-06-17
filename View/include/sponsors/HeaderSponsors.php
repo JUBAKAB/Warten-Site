@@ -6,7 +6,6 @@
     <title>Warten Site - Sponsors</title>
     <link rel="icon" type="image/png" href="View/img/logo.png" />
     <?php include('View/css/config_css.php');?>
-    <?php include('View/js/config_js.php');?>
     <?php
     /*Recuperation des langues avec la variable $langue */
     if(!isset($_GET["langue"])){

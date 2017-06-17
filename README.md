@@ -1,33 +1,20 @@
 # Warten-Site
 ### Aperçu
 ![Aperçu](https://image.noelshack.com/fichiers/2017/23/1496653222-sans-titre.png)
-### Tache réalisé et terminé
-* Mise en place de la BDD
-    * Objet relié à la BDD
-* Mise en place du visuel
-    * Page d'accueil à finir
-    * Page template Menu (Connexion et de navigation)
-    * Page template Footer
-    * Modules des Articles
-* Fonctionnel Front
-    * Slider
-    * Sponsor
-    * Menu
-    * Reseaux
-    * Footer
-    * Logo
-    * Connexion/Inscription
-    * ScrollBar
-    * Lien Sponsor (vers un autre onglet)
-* Fonctionnel Back
-    * Récupérer la BDD
-        - Sponsor
-        - Slider
-        - Menu
-        - Articles
-        - Biographie
-        - Langue
-### Tache à réalisé plus tard
+
+* Couche DAO 
+    -Pour les données client / serveur
+* Couche View
+    * Accueil (à finir)
+    * Nouveauté (à completer)
+    * Live (à completer)
+    * Sponsor (à completer)
+    * A propos (à faire)
+    * Modal (à compléter)
+    * Slider (fini)
+* Couche Controller
+    * Liaison des pages pour un contenu moins lourds
+### CkeckList du site
 * Modal de connexion et d'inscription
     * Sécurisation des caracteres
     * Utilisation de jQuery pour le modal
