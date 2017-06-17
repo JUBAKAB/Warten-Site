@@ -193,3 +193,7 @@
 
         </div>
     </div>
+    
+
+
+<script src="View/js/scriptSlider.js"></script>

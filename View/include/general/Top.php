@@ -2,52 +2,15 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Warten Site - Accueil</title>
-    <link rel="icon" type="image/png" href="View/img/logo.png" />
     <link rel="stylesheet" href="View/css/style.css">
-    <?php include('View/css/config_css.php');?>
-    <?php include('View/js/config_js.php');?>
-    <?php
-    /*Recuperation des langues avec la variable $langue */
-    if(!isset($_GET["langue"])){
-        $langue = "fr";
-    }else if($_GET["langue"] == "en"){
-         $langue = "en";
-    }else if($_GET["langue"] == "fr"){
-         $langue = "fr";
-    }else{
-         $langue = "fr";
-    }
-     /*
-        Gestion des traductions :
-        
-            Si la page n'est pas traduite alors on mets que l'élément n'est pas traduit et on mets un bouton "Change Language" ou "Changement de langue"
-            
-        Gestion des traductions dans la dashboard:
-        
-        Menu "gestion des traductions"
-        
-            Gestion de traduction paragraphe par paragraphe
-            et liste de tout ce qui n'est pas traduit et tableau de ce qui est déja traduit.
-        Traducteur avec BBCode gestion des couleurs et des gras etc
-        
-     
-     */
-    
-    
-        
-    
-    ?>
-    
 </head>
-
-<body lang="<?php echo $langue;?>">
-    <header>
+<body>
+     <header>
         <!-- Me suivre -->
         <div class="container_follow">
             Me suivre
         </div>
+        <!-- RS -->
         <div class="container_rs">
             <?php
                 for($i = 0;$i<count($lien);$i++)
@@ -66,6 +29,7 @@
             
             ?>
         </div>
+        <!-- Langue -->
         <div class="container_lang">
             <?php
                 
@@ -87,6 +51,7 @@
              */
             ?>
         </div>
+        <!-- Login/Sign up -->
         <div class="container_log">
             <a href="#?w=500" rel="popup_2" class="poplight">Inscription</a>
             <a href="#?w=500" rel="popup_1" class="poplight">Connexion</a>
@@ -265,3 +230,6 @@
         </nav>
     </div>
 
+
+</body>
+   

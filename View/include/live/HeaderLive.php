@@ -38,7 +38,4 @@
         
     
     ?>
-    
 </head>
-
-<body lang="<?php echo $langue;?>">

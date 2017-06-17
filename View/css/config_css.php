@@ -157,7 +157,6 @@
     }
     .box {
         height: <?php echo $heightBox?>px;
-        width: <?php echo $tailleBox ?>%;
         line-height: 165px;
     }
     .sponsor {

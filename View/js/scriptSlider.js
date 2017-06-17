@@ -8,7 +8,6 @@ var widthSlider = 1200;
 elem.style.width = (nbrSlider * widthSlider) + 'px';
 var maxPosition = (nbrSlider * widthSlider) - widthSlider;
 var multiplicateur = 8;
-console.log("SliderRefresh");
 
 
 //Move fonctionne
