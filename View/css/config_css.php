@@ -371,7 +371,7 @@
     .popup_block {
         text-align: center;
         display: none;
-        background: <?php echo  $colortertiaire;?>;
+        background: <?php echo  $colorsecondary;?>;
         color:<?php echo  $colorbasic;?>;
         padding: 20px;
         border: 2px solid <?php echo $colorprimary;?>;
@@ -387,10 +387,55 @@
         -moz-box-shadow: 0px 0px 20px #000;
         box-shadow: 0px 0px 20px #000;
     }
-    
+    .formulair_title{
+        color:red;
+        font-size: 35px;
+        cursor: default;
+        position: relative;
+        top:-40px;
+        left:-180px;
+    }
+    .formulair_text{
+        font-size: 25px;
+    }
+    .checkbox_formulair{
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+    }
+    .cursor_pointer{
+        cursor: pointer;
+    }
+    .input_formulair{
+        background-color: <?php echo $colortertiaire; ?>;
+        border: 0px;
+        height: 25px;
+        width: 300px;
+        border-radius:5px;
+        text-align:center;
+        color: <?php echo $colorbasic; ?>;
+        font-family: <?php echo $font;?>;
+        
+    }
+    .input_btn_formulair{
+        background: <?php echo $colorprimary;?>;
+        color: <?php echo $colorbasic;?>;
+        font: <?php echo $font; ?>;
+        border:0px;
+        border-radius: 5px;
+        padding: 13px;
+        font-size: 10px;
+        width: 300px;
+        cursor: pointer;
+        margin-bottom: 45px;
+    }
+    .input_btn_formulair:active{
+        background: <?php echo $colorprimary;?>;
+    }  
     img.btn_close {
         float: right;
         margin: -10px -20px 0 0;
+        cursor: pointer;
     }
     /*--Gérer la position fixed pour IE6--*/
     

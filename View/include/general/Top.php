@@ -27,7 +27,7 @@
         <div class="container_rs">
             <?php
                 for($i = 0;$i<count($lien);$i++)
-                echo '<a class="rs_bouton" href="'.$lien[$i].'"><img class="container_rs"    src="View/img/'.$pathpicture[$i].'.png"></a>';
+                echo '<a class="rs_bouton" href="'.$lien[$i].'" target="_blank" ><img class="container_rs" src="View/img/'.$pathpicture[$i].'.png"></a>';
       /*
         Gestion des réseaux sociaux :
                 5 Réseaux sociaux max

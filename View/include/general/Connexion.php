@@ -1,14 +1,15 @@
-<h1>Se connecter</h1>
+<p class="formulair_title">Se connecter</p>
 <form action="index.php" method="post">
-	<label for="email">Email :</label>
+	<p><label for="email" class="formulair_text">Email :</label>
 	<br>
-	<input type="email" name="mail">
+	<input class="input_formulair" type="email" name="mail"></p>
+	<p><label for="email" class="formulair_text">Mot de passe :</label>
 	<br>
-	<br>
-	<label for="email">Mot de passe :</label>
-	<br>
-	<input type="password" name="password">
-	<br>
-	<br>
-	<input type="submit" name="valider" value="Se connecter">
+	<input class="input_formulair" type="password" name="password"></p>
+	<p>
+	<input type="checkbox" class="checkbox_formulair" id="check_SaveMe">
+	<span style="font-size:15px"><label for="check_SaveMe" class="cursor_pointer">Se souvenir de moi</label></span>
+	</p>
+	<input class="input_btn_formulair" type="submit" name="valider" value="Se connecter">
+	
 </form>
