@@ -1,8 +1,8 @@
 <p class="formulair_title">Se connecter</p>
 <form action="index.php" method="post">
-	<p><label for="email" class="formulair_text">Email :</label>
+	<label for="email" class="formulair_text">Email :</label>
 	<br>
-	<input class="input_formulair" type="email" name="mail"></p>
+	<input class="input_formulair" type="email" name="mail">
 	<p><label for="email" class="formulair_text">Mot de passe :</label>
 	<br>
 	<input class="input_formulair" type="password" name="password"></p>
