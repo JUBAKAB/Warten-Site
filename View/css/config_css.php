@@ -1,22 +1,25 @@
 <style>
-    <?php // Theme
+    <?php 
+    
+    // Theme
     $colorprimary="#ff0000"; // Rouge
     $colorsecondary="#000000"; // Noir
     $colortertiaire="#080808"; // Gris
     $colorbasic="#FFFFFF"; //Blanc
     $font="font"; // Police
+    
     // Sponsor
     $tailleSponsor=13.2; // Taille en largeur
     $heightBox=165; // Hauteur de la boite des sponsors
     $positionSponsor=1; // Position des sponsor
     $heightSponsor=60; // Hauteur des sponsors
+    
     //Slider
-    $lienSlider=["#",
-    "#",
-    "#",
-    "#"]; // Lien des sliders
+    $lienSlider=["#", "#", "#", "#"]; // Lien des sliders
     $nombreSlider=2; // Nombre d'image pour le sliders
+    
     ?>
+    
     /*  FontFace  */
     
     @font-face {

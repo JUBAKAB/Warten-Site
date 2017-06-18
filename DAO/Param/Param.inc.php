@@ -1,5 +1,7 @@
 
 <?php
+
+//Class Param qui intégre les login du FTP
 class Param{
     public static $login="root";
     public static $mdp="";
