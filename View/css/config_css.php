@@ -53,7 +53,7 @@
     .container_follow {
         height: 40px;
         float: left;
-        font: 15px;
+        font-size: 12px;
         margin-left: 80px;
         line-height: 40px;
         color: white;
@@ -95,7 +95,7 @@
     .container_log a:link {
         text-decoration: none;
         font-family: <?php echo $font ?>;
-        font-size: 20px;
+        font-size: 15px;
         color: white;
         margin-right: 15px;
     }
@@ -111,8 +111,8 @@
     
     .img_logo {
         width: 150px;
-        height: 80px;
-        padding-top: 5px;
+        height:50px;
+        padding-top: 20px;
         margin-left: 80px;
         float: left;
     }
@@ -121,7 +121,7 @@
         height: 45px;
         width: 490px;
         float: right;
-        margin-top: 15px;
+        margin-top: 25px;
     }
     
     .menu {
@@ -131,7 +131,7 @@
         margin-right: 20px;
         font-family: <?php echo $font ?>;
         cursor: pointer;
-        font-size: 25px;
+        font-size: 15px;
     }
     
     .menu:hover {
@@ -291,10 +291,10 @@
     .titleCellules {
         line-height: 50px;
         margin-left: 30px;
-        font-size: 35px;
+        font-size: 18px;
         font-family: <?php echo $font ?>;
         cursor: default;
-        color: <?php echo $colorsecondary ?>;
+        color: <?php echo $colorbasic ?>;
     }
     /*  Footer  */
     
@@ -379,7 +379,7 @@
         padding: 20px;
         border: 2px solid <?php echo $colorprimary;?>;
         float: left;
-        font-size: 25px;
+        font-size: 20px;
         font-family: <?php echo $font ?>;
         position: fixed;
         top: 50%;
@@ -392,14 +392,14 @@
     }
     .formulair_title{
         color:red;
-        font-size: 35px;
+        font-size: 25px;
         cursor: default;
         position: relative;
         top:-40px;
-        left:-180px;
+        left:-168px;
     }
     .formulair_text{
-        font-size: 25px;
+        font-size: 22px;
     }
     .checkbox_formulair{
         width: 10px;
