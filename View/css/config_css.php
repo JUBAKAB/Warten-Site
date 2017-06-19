@@ -39,8 +39,14 @@
         height: 40px;
         width: 100%;
         background-color: <?php echo $colorprimary ?>;
+        position:fixed;
+         z-index: 250;
     }
-    
+    .header{
+         height: 40px;
+         width: 100%;
+   
+    }
     a {
         text-decoration: none;
     }
@@ -361,21 +367,7 @@
         background: transparent;
     }
     /* Modal Connexion/Inscription */
-    
-    #fade {
-        /*--Masque opaque noir de fond--*/
-        display: none;
-        background: #000; /*Fond couleur*/
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: .80;
-        z-index: 9999;
-    }
-    
-    .popup_block {
+        .popup_block {
         text-align: center;
         display: none;
         background: <?php echo  $colorsecondary;?>;
@@ -388,12 +380,26 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        z-index: 99999;
+        z-index: 300;
         /*--Les différentes définitions de Box Shadow en CSS3--*/
         -webkit-box-shadow: 0px 0px 20px #000;
         -moz-box-shadow: 0px 0px 20px #000;
         box-shadow: 0px 0px 20px #000;
     }
+    #fade {
+        /*--Masque opaque noir de fond--*/
+        display: none;
+        background: #000; /*Fond couleur*/
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .80;
+        z-index: 200;
+    }
+    
+
     .formulair_title{
         color:red;
         font-size: 25px;
@@ -441,7 +447,7 @@
     }  
     img.btn_close {
         float: right;
-        margin: -10px -20px 0 0;
+        margin: -10px -10px 0 0;
         cursor: pointer;
     }
     /*--Gérer la position fixed pour IE6--*/

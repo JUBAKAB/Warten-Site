@@ -8,7 +8,7 @@
                 var query = popURL.split('?');
                 var dim = query[1].split('&amp;');
                 var popWidth = dim[0].split('=')[1]; //La première valeur du lien
-
+                 document.getElementById('visibilityHeader').style.visibility = 'hidden';
                 //Faire apparaitre la pop-up et ajouter le bouton de fermeture
                 $('#' + popID).fadeIn().css({
                         'width': Number(popWidth)
@@ -38,7 +38,8 @@
             //Fermeture de la pop-up et du fond
             $('a.close, #fade').live('click', function() { //Au clic sur le bouton ou sur le calque...
                 $('#fade , .popup_block').fadeOut(function() {
-                    $('#fade, a.close').remove(); //...ils disparaissent ensemble
+                    $('a.close, #fade').remove(); //...ils disparaissent ensemble
+                    document.getElementById('visibilityHeader').style.visibility = 'visible';
                 });
                 return false;
             });

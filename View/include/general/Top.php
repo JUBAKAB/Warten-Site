@@ -18,6 +18,7 @@
      
     
 <body>
+<div id="visibilityHeader">
      <header>
         <!-- Me suivre -->
         <div class="container_follow">
@@ -42,6 +43,7 @@
             
             ?>
         </div>
+
         <!-- Langue -->
         <div class="container_lang">
         </div>
@@ -49,15 +51,7 @@
         <div class="container_log">
             <a href="#?w=500" rel="popup_2" class="poplight">Inscription</a>
             <a href="#?w=500" rel="popup_1" class="poplight">Connexion</a>
-            <!-- PopUp -->
-            <div id="popup_1" class="popup_block">
-               
-                <?php include_once 'View/include/general/Connexion.php' ?>
-            </div>
 
-            <div id="popup_2" class="popup_block">
-                Bien dans l'inscription
-            </div>
          <!--
                 ---------Inscription--------
                 
@@ -202,6 +196,9 @@
                  -->
         </div>
     </header>
+    <div class="header"></div>
+    
+</div>
 <?php include_once('Controleurs/general/sponsorControler.php'); ?>
     <!-- Menu et logo -->
     <div class="contener_menu">
@@ -224,4 +221,12 @@
             </ul>
         </nav>
     </div>
-   
+       <!-- PopUp -->
+    <div id="popup_1" class="popup_block">
+
+        <?php include_once 'View/include/general/Connexion.php' ?>
+    </div>
+
+    <div id="popup_2" class="popup_block">
+        Bien dans l'inscription
+    </div>
