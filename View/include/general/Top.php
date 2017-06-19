@@ -202,7 +202,7 @@
                  -->
         </div>
     </header>
-
+<?php include_once('Controleurs/general/sponsorControler.php'); ?>
     <!-- Menu et logo -->
     <div class="contener_menu">
         <div class="img_logo">
@@ -224,7 +224,4 @@
             </ul>
         </nav>
     </div>
-
-
-</body>
    

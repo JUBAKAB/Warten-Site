@@ -102,7 +102,7 @@
     /*  Menu & Logo  */
     
     .contener_menu {
-        background-color: <?php echo $colorsecondary ?>;
+        background-color: <?php echo $colorprimary ?>;
         height: 90px;
         width: 100%;
         border-bottom: 3px <?php echo $colorprimary ?> solid;
@@ -116,18 +116,22 @@
         margin-left: 80px;
         float: left;
     }
-    
+    li{
+        list-style-type: none;
+    }
     nav {
         height: 45px;
         width: 490px;
         float: right;
         margin-top: 25px;
+        
     }
     
     .menu {
         color: <?php echo $colorbasic ?>;
         float: left;
         list-style-type: none;
+        list-style: none;
         margin-right: 20px;
         font-family: <?php echo $font ?>;
         cursor: pointer;
@@ -135,7 +139,7 @@
     }
     
     .menu:hover {
-        color: <?php echo $colorprimary ?>;
+        color: <?php echo $colortertiaire ?>;
     }
     /*  Sponsor  */
     
